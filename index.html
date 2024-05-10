@@ -44,7 +44,7 @@
                     <p class="lead">'주먹이 날아오는 것에 대한 두려움을 극복하자'</p>
                     <p class="lead">'상대를 더 생각하고 분석하자'</p>
                     <p class="lead">제가 6년간 복싱을 배우며 항상 마음에 새기던 말 입니다. <br> 새로운 것을 배우고 익히는 것에 대한 두려움이
-                        없는 것, 소스코드를 끝까지 분석하는 것 <br>이것이 저의 가장 큰 장점 입니다! </p>
+                        없는 것,<br> 소스코드를 끝까지 분석하는 것 <br>이것이 저의 가장 큰 장점 입니다! </p>
 
 
                 </div>
@@ -67,25 +67,64 @@
                 </div>
                 <div class="col-md-6 border-start border-dark ps-4 text-start move-right" style="min-height: 200px;">
                     <h2 class="fw-bolder mb-4">CONTACT</h2>
-                    <p class="lead">name : 김지수</p>
-                    <p class="lead">birth : 2000.09.08</p>
-                    <p class="lead">phone : 010 - 2184 - 7094</p>
-                    <p class="lead">e-mail : raina11170@gamil.com</p>
+                    <p class="lead">NAME : 김지수</p>
+                    <p class="lead">BIRTH : 2000.09.08</p>
+                    <a class="lead" href="tel://010-2184-7094">PHONE : 010 - 2184 - 7094</p>
+                    <p class="lead">E-MAIL : <a href="#" data-bs-toggle="modal" data-bs-target="#emailModal">raina11170@gamil.com</a></p>
                     <p class="lead">
-
-                        <a href="https://github.com/kimjiisuuu">
-                            <img src="images/깃허브.png" style="width: 70px; height: auto;">
-                        </a>
-
-
-                    <p class="lead">
-
-                        <a href="https://www.notion.so/00f28e49b38a49f8a6a3801633759ee0">
-                            <img src="images/노션.png" style="width: 60px;">
-                        </a>
+                        <span style="display: inline-block; margin-right: 40px;">
+                            <a href="https://github.com/kimjiisuuu">
+                                <img src="images/깃허브.png" style="width: 70px; height: auto;">
+                            </a>
+                        </span>
+                        <span style="display: inline-block;">
+                            <a href="https://www.notion.so/00f28e49b38a49f8a6a3801633759ee0">
+                                <img src="images/노션.png" style="width: 65px;">
+                            </a>
+                        </span>
 
                     </p>
-                </div>
+                    <!--이메일 모달 -->
+                    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="emailModalLabel">김지수 에게 이메일 보내기</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--이메일 폼 -->
+                                    <form class="gform" id="emailForm" action="https://script.google.com/macros/s/AKfycby1Bryve-oUDi2Lr463N-RQyfVNb5GHOFH_tOuKVB49tlgPTeJ9hUlHbm1Ynr_l_YIL/exec"
+                                        method="post" onsubmit="handleSubmit(event)">
+                                        <!-- <span class="close-email" onclick="closeEmailModal()">&times;</span> -->
+
+                                        <div class="mb-3">
+                                            <label for="emailSubject" class="form-label">제목</label>
+                                            <input type="text" class="form-control" id="emailSubject" name="subject">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="emailBody" class="form-label">내용</label>
+                                            <textarea class="form-control" id="emailBody" name="body" rows="3"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="emailAttachment" class="form-label">첨부 파일</label>
+                                            <input type="file" class="form-control" id="emailAttachment" name="attachment">
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary">보내기</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--이메일 모달 끝 -->
+
+
+                </div> <!--contact 시작 div-->
+                
             </div>
         </div>
     </section>
