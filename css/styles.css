@@ -11,6 +11,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ /* 첫 번째 섹션의 높이를 뷰포트 높이와 동일하게 설정 */
+ .first-section {
+     height: 100vh;
+     /* 다른 스타일링을 위한 추가적인 CSS를 여기에 추가할 수 있습니다. */
+ }
+
  .move-right {
   padding-left: 10px;
 }
