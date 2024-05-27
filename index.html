@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,13 +13,14 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-        
+
         .first-section {
             height: 100vh;
-          
+
         }
     </style>
 
+</head>
 </head>
 
 
@@ -28,6 +28,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">복서 개발자 JISOO</a>
             <a class="navbar-brand" href="#!">복싱하는 개발자, 밑에 페이지 하나 추가 (처음부터 내 사진 X)</a>
 
         </div>
@@ -41,12 +42,12 @@
                 <h2 class="fw-bolder">새로운 섹션</h2>
                 <p>이 섹션에 새로운 내용을 추가하세요.</p>
             </div>
-           
+
         </div>
     </div>
 </section>
 <!--시작페이지 끝-->
-    
+
 
     <!-- 처음 about me-->
     <section class="py-5">
@@ -57,8 +58,10 @@
                 <div class="col-md-6">
                     <div class="mb-1">작은 아이콘(그림 or사진)</div>
                     <div class="lead fw-bolder">
+                        <span>6년차 BOXER</span>
                         <span>끝까지 물고 늘어지는 INFIGHTER</span>
                     </div>
+                    <h1 class="display-5 fw-bolder">신입 개발자 김지수 입니다</h1>
                     <h1 class="display-5 fw-bolder">복싱하는 개발자 김지수 입니다</h1>
 
                     <p class="lead"></p>
@@ -67,20 +70,18 @@
                     <p class="lead">'상대를 더 생각하고 분석하자'</p>
                     <p class="lead">제가 6년간 복싱을 배우며 항상 마음에 새기던 말 입니다. <br> 새로운 것을 배우고 익히는 것에 대한 두려움이
                         없는 것,<br> 소스코드를 끝까지 분석하는 것 <br>이것이 저의 가장 큰 장점 입니다! </p>
-
-
                 </div>
             </div>
         </div>
         </div>
     </section>
     <hr class="my-5" style="border-top: 2px solid #fff;">
-
     <!-- 이력 소개 -->
     <section class="py-5 bg-light">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 align-items-stretch">
                 <div class="col-md-6 justify-content-start" style="min-height: 200px; padding-left: 20px;">
+                    <h2 class="fw-bolder mb-4">HISTORY</h2>
                     <h2 class="fw-bolder mb-4">HISTORY(글꼴바꾸고 스르륵 나타나는 효과 추가)</h2>
                     <p class="lead">2019.07 ~ 2019.08 츠쿠바 대학교 단기 연수</p>
                     <p class="lead">2022.02 ~ 2023.01 연성대학교 기숙사 근무</p>
@@ -91,6 +92,8 @@
                     <h2 class="fw-bolder mb-4">CONTACT</h2>
                     <p class="lead">NAME : 김지수</p>
                     <p class="lead">BIRTH : 2000.09.08</p>
+                    <a class="lead" href="tel://010-2184-7094">PHONE : 010 - 2184 - 7094</p>
+                    <p class="lead">E-MAIL : <a href="#" data-bs-toggle="modal" data-bs-target="#emailModal">raina11170@gamil.com</a></p>
                     <!-- 전화 걸기 버튼 -->
                     <a class="btn btn-primary btn-sm mb-2" href="tel://010-2184-7094">전화 걸기</a>
                     <p class ="lead">PHONE : 010 - 2184 - 7094 </p>
@@ -108,9 +111,10 @@
                                 <img src="images/노션.png" style="width: 65px;">
                             </a>
                         </span>
+
                     </p>
                 </div>
-                
+
                     <!--이메일 모달 -->
                     <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
@@ -127,10 +131,12 @@
 
                                         <div class="mb-3">
                                             <label for="emailSubject" class="form-label">제목</label>
+                                            <input type="text" class="form-control" id="emailSubject" name="subject">
                                             <input type="text" class="form-control" id="emailSubject" >
                                         </div>
                                         <div class="mb-3">
                                             <label for="emailBody" class="form-label">내용</label>
+                                            <textarea class="form-control" id="emailBody" name="body" rows="3"></textarea>
                                             <textarea class="form-control" id="emailBody"  rows="3"></textarea>
                                         </div>
                                         <div class="mb-3">
@@ -148,21 +154,12 @@
                         </div>
                     </div>
                     <!--이메일 모달 끝 -->
-
-
                 </div> <!--contact 시작 div-->
                 
             </div>
         </div>
     </section>
     <hr class="my-5" style="border-top: 2px solid #fff;">
-
-
-
-
-
-
-
     <section class="py-5 bg-light">
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="fw-bolder mb-4">SKILLS</h2>
@@ -213,10 +210,7 @@
             </div>
         </div>
     </section>
-
     <hr class="my-5" style="border-top: 2px solid #fff;">
-
-
     <!-- 프로젝트 설명 -->
     <section class="py-5 bg-light">
         <div class="container px-4 px-lg-5 mt-5">
@@ -225,7 +219,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- 사진 -->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <img class="card-img-top" src="images/bello.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -244,13 +238,11 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- 두 번째 프로젝트 카드 -->
-
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- 사진 -->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <img class="card-img-top" src="images/home.jpeg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -293,8 +285,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <!-- Modal -->
                 <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
                     aria-hidden="true">
@@ -307,9 +297,13 @@
                             </div>
                             <div class="modal-body">
                                 <!-- 여기에 프로젝트 상세 내용 및 이미지 등 추가 -->
-                                <img src="https://dummyimage.com/600x400/dee2e6/6c757d.jpg" class="img-fluid mb-3"
+                                <p> 다양한 종류의 코디를 통해 원하는 스타일을 선택하고 구매할 수 있는 쇼핑몰 사이트  </p>
+                                <img src="images/bello.png" class="img-fluid mb-3"
                                     alt="...">
-                                <p>스타일링 된 옷들을 확인하고 바로 구매까지 가능하게 한 쇼핑몰 사이트</p>
+                                <img src="images/스타일링.png" class="img-fluid mb-3"
+                                    alt="...">
+                                <img src="images/상세정보.png" class="img-fluid mb-3"
+                                    alt="...">
                                 <p> 주요 기능 : 전체 스타일링, 스타일링 된 옷 클릭 시 상세 정보 조회, 장바구니, 구매 기능 </p>
                                 <p> 내 역할 : 전체 관리자 페이지 구현, db구축 </p>
                             </div>
@@ -332,16 +326,24 @@
                             </div>
                             <div class="modal-body">
                                 <!-- 프로젝트 상세 내용 및 이미지 -->
-                                <img src="https://dummyimage.com/600x400/dee2e6/6c757d.jpg" class="img-fluid mb-3"
-                                    alt="...">
-                                <p>프로젝트 2에 대한 설명을 입력하세요.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                
+                                <p> 소셜 로그인, 결제로 간단하고 편리한 사용감, <br> 지도 API와, 검색 기능을 통한 쉽고 빠른 위치 확인과 검색 <br>
+                                    내가 원하는 날짜를 예약 가능한 숙박 사이트<br> </p>
+                               <img src="images/home.jpeg" class="img-fluid mb-3"
+                               alt="...">
+                               <img src="images/KakaoTalk_Photo_2024-05-13-16-04-57 001.jpeg" class="img-fluid mb-3"
+                               alt="...">
+                               <img src="images/KakaoTalk_Photo_2024-05-13-16-04-57 002.jpeg" class="img-fluid mb-3"
+                               alt="...">
+                               <p> 주요 기능 : 카카오로그인, 토스결제, 숙소 종류, 위치 검색, 예약 기능  </p>
+                               <p> 내 역할 : 카카오로그인, 숙소 예약, db구축 </p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
 
                 <!--세번쨰 모달-->
                 <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalXLabel"
@@ -367,16 +369,10 @@
                     </div>
                 </div>
                 <!-- Modal 끝 -->
-
-
             </div>
         </div>
     </section>
-
     <hr class="my-5" style="border-top: 2px solid #fff;">
-
-
-
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">
@@ -388,5 +384,4 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
-
 </html>
