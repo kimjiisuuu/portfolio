@@ -13,83 +13,95 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-
         .first-section {
             height: 100vh;
-
         }
         
-    .skill-bar {
-        margin-top: 20px;
-    }
+        .skill-bar {
+            margin-top: 20px;
+        }
 
-    .skill {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-    }
+        .skill {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
 
-    .skill-name {
-        width: 120px;
-        font-weight: bold;
-    }
+        .skill-name {
+            width: 120px;
+            font-weight: bold;
+        }
 
-    .skill-level {
-        background-color: #F08080;
-        color: white;
-        padding: 1px;
+        .skill-level {
+            background-color: #F08080;
+            color: white;
+            padding: 1px;
+        }
+
+        .left-align {
+            text-align: left;
+        }
+        
+    .image-right {
+        /* float: left; 오른쪽으로 이동 */
+        margin-left: 750px; /* 필요에 따라 여백을 추가할 수 있음 */
     }
-</style>
+        
+    .mb-4 {
+        margin-bottom: 5rem; /* 원하는 여백 크기로 조정할 수 있습니다 */
+    }
+        
     
-
+</style>
+        
+    </style>
 </head>
-</head>
-
-
 <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">CODE PUNCHER</a>
-            
-
+        <div class="container px-4 px-lg-5 text-center">
+            <a class="navbar-brand text-center" href="#!">CODE PUNCHER</a>
         </div>
     </nav>
- <!-- 시작페이지 -->
- <section class="py-5">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
+    <!-- 시작페이지 -->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                 <!-- 이미지를 먼저 배치 -->
             <div class="col-md-6">
-                <!-- 왼쪽 컨텐츠 -->
-                <h2 class="fw-bolder">새로운 섹션</h2>
-                <p>이 섹션에 새로운 내용을 추가하세요.</p>
+                <img class="card" src="images/KakaoTalk_Photo_2024-07-15-22-56-29.jpeg" alt="..." />
             </div>
-
+                <div class="col-md-6 ">
+                    <!-- 왼쪽 컨텐츠 -->
+                    <h2 class="display-6 fw-bolder mb-4">복싱하는 개발자 김지수 입니다</h2>
+                    <br>
+                    <br>
+                    <p class="display-4 fw-bolder" style="font-size:x-large">'주먹이 날아오는 것에 대한 두려움을 극복하자'</p>
+                    <p class="fw-bolder" style="font-size: x-large">'상대를 더 생각하고 분석하자'</p>
+                    <p class="fw-bolder"></p>
+                    <p class="lead"></p>
+                    <br><br>
+                    <p style="font-size: x-large">
+                        제가 6년간 복싱을 배우며 항상 마음에 새기던 말 입니다. <br>
+                        새로운 것을 배우고 익히는 것에 대한 두려움이 없는 것,<br>
+                        소스코드를 끝까지 분석하는 것 <br>
+                        이것이 저의 가장 큰 장점 입니다!
+                    </p>
+                </div>
+                
+            </div>
         </div>
-    </div>
 </section>
 <!--시작페이지 끝-->
 
 
-<section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6">
-                <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." />
-            </div>
-            <div class="col-md-6">
-                <h1 class="display-5 fw-bolder" style="margin-bottom: 150px;">복싱하는 개발자 김지수 입니다</h1>
-                <div class="mb-1"></div>
-                <div class="lead fw-bolder">
-                    <!-- <span>6년차 BOXER</span>
-                    <span>끝까지 물고 늘어지는 INFIGHTER</span> -->
-                </div>
-                <p class="lead"></p>
-                <p class="lead"></p>
-                <p class="text-center" style="font-size:x-large;">'주먹이 날아오는 것에 대한 두려움을 극복하자'</p>
-                <p class="text-center"style="font-size: x-large;">'상대를 더 생각하고 분석하자'</p>
+
+
                 
-                <p style="margin: 0 auto; margin-top: 80px; text-align: center; font-size: larger;">제가 6년간 복싱을 배우며 항상 마음에 새기던 말 입니다. <br> 새로운 것을 배우고 익히는 것에 대한 두려움이 없는 것,<br> 소스코드를 끝까지 분석하는 것 <br>이것이 저의 가장 큰 장점 입니다! </p>
+                
+                
+                
+               
 
             </div>
         </div>
@@ -133,13 +145,11 @@
 
                                         <div class="mb-3">
                                             <label for="emailSubject" class="form-label">제목</label>
-                                            <input type="text" class="form-control" id="emailSubject" name="subject">
-                                            <input type="text" class="form-control" id="emailSubject" >
+                                            <input type="text" class="form-control" id="emailSubject" name="제목">
                                         </div>
                                         <div class="mb-3">
                                             <label for="emailBody" class="form-label">내용</label>
                                             <textarea class="form-control" id="emailBody" name="body" rows="3"></textarea>
-                                            <textarea class="form-control" id="emailBody"  rows="3"></textarea>
                                         </div>
                                         <div class="mb-3">
                                             <label for="emailAttachment" class="form-label">첨부 파일</label>
@@ -161,8 +171,8 @@
             </div>
         </div>
     </section>
-    <hr class="my-5" style="border-top: 2px solid #fff;">
-    <section class="py-5 bg-light text-center">
+    <!-- <hr class="my-5" style="border-top: 2px solid #fff;"> -->
+    <section class="py-5 text-center">
         <h2 class="fw-bolder mb-4" style="margin-bottom: 200px;">SKILLS</h2>
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 align-items-stretch">
@@ -220,6 +230,10 @@
                         <div class="skill">
                             <div class="skill-name" style="margin-top: 15px;">SourceTree</div>
                             <div class="skill-level" style="width: 60%;">60%</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name" style="margin-top:15px;">Spyder</div>
+                            <div class="skill-level" style="width:50%;">50%</div>
                         </div>
                         <!-- Add other tools here -->
                     </div>
@@ -282,22 +296,22 @@
                     </div>
                 </div>
                 <!--세번째 프로젝트 -->
-                <div class="col mb-5">
-                    <div class="card h-100">
+                <!-- <div class="col mb-5">
+                    <div class="card h-100"> -->
                         <!-- 사진 -->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                            alt="프로젝트 이미지" />
+                   <!--    <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                            alt="프로젝트 이미지" /> -->
                         <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
+                  <!--      <div class="card-body p-4">
+                            <div class="text-center"> -->
                                 <!-- 프로젝트 이름 -->
-                                <h5 class="fw-bolder">HELLOSOFT</h5>
+                        <!--        <h5 class="fw-bolder">HELLOSOFT</h5> -->
                                 <!-- 프로젝트 설명 -->
-                                라이센스 관리 프로그램
+                             <!--   라이센스 관리 프로그램  
                             </div>
-                        </div>
+                        </div>  -->
                         <!-- 자세히 보기 -->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <!--      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
                                 <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
                                     data-bs-target="#projectModal3">자세히 보기</button>
@@ -305,6 +319,34 @@
                         </div>
                     </div>
                 </div>
+ -->
+
+               <!--네번째 프로젝트 -->
+               <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- 사진 -->
+                    <img class="card-img-top" src="images/IMG_0718.jpg"
+                        alt="프로젝트 이미지" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- 프로젝트 이름 -->
+                            <h5 class="fw-bolder">SOUL CAR</h5>
+                            <!-- 프로젝트 설명 -->
+                            차량 대여 GUI 프로그램
+                        </div>
+                    </div>
+                    <!-- 자세히 보기 -->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#projectModal4">자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
                 <!-- Modal -->
                 <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
                     aria-hidden="true">
@@ -365,30 +407,69 @@
                    </div>
                </div>
 
-                <!--세번쨰 모달-->
-                <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalXLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="projectModal3Label">HELLOSOFT</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- 여기에 프로젝트 상세 내용 및 이미지 등 추가 -->
-                                <img src="https://dummyimage.com/600x400/dee2e6/6c757d.jpg" class="img-fluid mb-3"
-                                    alt="...">
-                                <p>프로젝트 상세 설명</p>
-                                <!-- 추가 내용 -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 끝 -->
+               <!-- Modal 끝 -->
+
+               <!--세번쨰 모달-->
+               <!-- <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalXLabel"
+                   aria-hidden="true">
+                   <div class="modal-dialog modal-lg modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="projectModal3Label">HELLOSOFT</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">   -->
+                               <!-- 여기에 프로젝트 상세 내용 및 이미지 등 추가 -->
+                            <!--   <img src="https://dummyimage.com/600x400/dee2e6/6c757d.jpg" class="img-fluid mb-3"
+                                   alt="...">
+                               <p>프로젝트 상세 설명</p> -->
+                               <!-- 추가 내용 -->
+                  <!--         </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+ -->
+
+               <!--네번쨰 모달-->
+               <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalXLabel"
+                   aria-hidden="true">
+                   <div class="modal-dialog modal-lg modal-dialog-centered">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h5 class="modal-title" id="projectModal3Label">SOUL CAR</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                              
+                            
+                               <p> db 연동으로 정보 조회, <br> 편리한 예약, 다양한 차량 정보, <br>
+                                관리자와 사용자 모두 한 번에 사용 가능한 GUI 프로그램<br> </p>
+                           <img src="images/IMG_0718.jpg" class="img-fluid mb-3"
+                           alt="...">
+                           <img src="images/IMG_0720.jpg" class="img-fluid mb-3"
+                           alt="...">
+                           <img src="images/IMG_0721.jpg" class="img-fluid mb-3"
+                           alt="...">
+                           <img src="images/IMG_0722.jpg" class="img-fluid mb-3"
+                           alt="...">
+                           <img src="images/IMG_0723.jpg" class="img-fluid mb-3"
+                           alt="...">
+                           <p> 주요 기능 : 차량 정보 조회, 예약 정보 조회, 차량 예약, 문의사항 </p>
+                           <p> 내 역할 : db구축, 관리자 페이지, 회원 관리  </p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+
             </div>
         </div>
     </section>

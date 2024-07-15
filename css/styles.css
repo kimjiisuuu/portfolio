@@ -11,17 +11,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- /* 첫 번째 섹션의 높이를 뷰포트 높이와 동일하게 설정 */
- .first-section {
-     height: 100vh;
-     /* 다른 스타일링을 위한 추가적인 CSS를 여기에 추가할 수 있습니다. */
- }
+ /* .image-card {
+  margin-right: 100000000000px; /* 원하는 오른쪽으로의 이동량을 설정 */
+/* } */ 
 
- .move-right {
-  padding-left: 10px;
+
+p.fw-bolder {
+  font-size: 5rem; /* 예시로 크기를 조절해보세요 */
+  line-height: 2; /* 줄간격을 조절해보세요 */
 }
 
 :root {
+
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
